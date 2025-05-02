@@ -1,0 +1,120 @@
+
+.App {
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Ink Free';
+  src: url('https://fonts.adobe.com/fonts/ink-free#licensing-section');
+}
+
+* {
+  font-family: 'Ink Free';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #c5c6f2 0%, #bebeec 100%);
+}
+
+.app-container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.function-input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.function-input:focus {
+  border-color: #8080ff;
+}
+
+.graph-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 15px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.graph-button:hover {
+  background-color: #e0e0ff;
+}
+
+.result-container {
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8ff;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.graph-container {
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explanation-container {
+  width: 100%;
+  min-height: 80px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #444;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
