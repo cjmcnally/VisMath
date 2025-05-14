@@ -25,7 +25,7 @@ async function getAIExplanation(equation) {
                     {
                         role: "user",
                         content: `Explain the mathematical function ${equation} in simple terms using a couple of sentences. 
-                                Then, list its key characteristics as bullet points, with each bullet on a **new line**, like:
+                                Then, list its key characteristics as bullet points, with each bullet on a new line, like:
 
                                 - First characteristic  
                                 - Second characteristic  

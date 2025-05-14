@@ -9,7 +9,7 @@
 }
 
 * {
-  font-family: 'Ink Free';
+  font-family: 'Jaldi';
 }
 
 body {
@@ -64,7 +64,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   padding: 8px 15px;
-  background-color: #f2f2f2;
+  background-color: #d7d7d7;
   border: 1px solid #ccc;
   border-radius: 8px;
   cursor: pointer;
