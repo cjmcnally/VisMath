@@ -13,10 +13,12 @@ function App() {
     const [equation, setEquation] = useState('');
     const [submittedEquation, setSubmittedEquation] = useState('');
     const [graphData, setGraphData] = useState([]);
+    const [explanation, setExplanation] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
         setSubmittedEquation(equation);
+        setExplanation(equation);
     }
 
     return (
@@ -45,10 +47,7 @@ function App() {
                     <ExpandedGraph data={graphData}/>
                 </div>
                 <div className="explanation-container">
-                    {/* Create an explanation file need to implement ai API */}
                     <Explanation equation={submittedEquation} />
-                    <EquationParser equation={submittedEquation} dataGenerated={setGraphData} />
-                    {/*<GetAIExplanation equation={submittedEquation} />*/}
                 </div>
             </div>
         </div>
